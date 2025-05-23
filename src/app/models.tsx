@@ -898,12 +898,12 @@ export const amdRyzen7000_8000G = [
 
 export const amdRyzen5000 = [
   // Ryzen 5000X3D Series (Zen 3 with 3D V-Cache)
-  {
-    "model": "Ryzen 9 5950X3D", // This model was rumored but never officially released.
-                                // The highest X3D for AM4 was 5800X3D, then later 5700X3D and 5600X3D.
-                                // I will omit 5950X3D and 5900X3D as they don't exist.
-                                // Starting with actual released X3D.
-  },
+  // {
+  //   "model": "Ryzen 9 5950X3D", // This model was rumored but never officially released.
+  //                               // The highest X3D for AM4 was 5800X3D, then later 5700X3D and 5600X3D.
+  //                               // I will omit 5950X3D and 5900X3D as they don't exist.
+  //                               // Starting with actual released X3D.
+  // },
   {
     "model": "Ryzen 7 5800X3D",
     "release_year_initial": "2022 (Q2)",

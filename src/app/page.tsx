@@ -12,11 +12,16 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../co
 import { Badge } from "../components/ui/badge"
 import {
   intel13,
-  intel14
+  intel14,
+  amdRyzen3000,
+  amdRyzen4000G,
+  amdRyzen5000,
+  amdRyzen7000_8000G,
+  amdRyzen9000
 } from "./models"
 import { Delete, PinIcon, PinOff, Star, StarOff } from "lucide-react"
 
-export type processorData = {
+      export type processorData = {
   model:string
    release_year_initial: string
   p_cores: number
@@ -347,7 +352,12 @@ export default function VehicleDimensions() {
   const data = useMemo(
     () => [
       ...intel13,
-      ...intel14
+      ...intel14,
+      ...amdRyzen3000,
+      ...amdRyzen4000G,
+      ...amdRyzen5000,
+      ...amdRyzen7000_8000G,
+      ...amdRyzen9000
     ],
     [],
   )
@@ -546,7 +556,7 @@ export default function VehicleDimensions() {
               </a>
             </div>
             <p>
-              {filteredData.length} of {totalprocessorModels} vehicles found
+              {filteredData.length} of {totalprocessorModels} found
             </p>
           </div>
 
